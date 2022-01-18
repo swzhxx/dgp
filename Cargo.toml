@@ -1,0 +1,13 @@
+[package]
+edition = "2021"
+name = "dgp"
+version = "0.1.0"
+
+[[example]]
+name = "tour"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1"
+env_logger = "0.9"
+iced = {version = "0.3", features = ["image", "debug"]}
