@@ -27,7 +27,7 @@ impl Sandbox for Tour {
             scroll: scrollable::State::new(),
             back_button: button::State::new(),
             next_button: button::State::new(),
-            debug: true,
+            debug: false,
         }
     }
 
@@ -68,7 +68,7 @@ impl Sandbox for Tour {
             );
         }
 
-        // controls = controls.push(Space::with_width(Length::Fill));
+        controls = controls.push(Space::with_width(Length::Fill));
 
         if steps.can_continue() {
             controls = controls.push(
