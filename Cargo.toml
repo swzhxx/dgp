@@ -14,6 +14,9 @@ name = "custom-widget"
 
 [[example]]
 name = "integration-plotters-iced"
+
+[[example]]
+name = "hw1-fitting"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
@@ -26,3 +29,4 @@ iced_wgpu = "0.4"
 log = "0.4"
 nalgebra = "0.30.1"
 plotters = "0.3"
+num-traits="0.2"
