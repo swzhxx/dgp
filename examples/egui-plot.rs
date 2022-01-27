@@ -2,8 +2,8 @@ use std::env;
 
 use eframe::epi;
 use egui::{
-    plot::{MarkerShape, Plot},
-    Pos2, Widget,
+    plot::{Line, MarkerShape, Plot, Values},
+    Color32, Pos2, Widget,
 };
 use log::{info, LevelFilter};
 
@@ -56,7 +56,17 @@ impl Widget for &mut PlotLine {
                     .radius(5.)
                     .shape(MarkerShape::Circle)
                     .color(egui::Color32::from_rgb(255, 0, 0));
-                    plot_ui.points(points)
+                    plot_ui.points(points);
+
+                    //line
+
+                    // let line = Line::new(Values::from_explicit_callback(
+                    //     move |x| 0.5 * (2.0 * x).sin(),
+                    //     ..,
+                    //     512,
+                    // ))
+                    // .color(Color32::from_rgb(200, 100, 100));
+                    // plot_ui.line(line);
                 }
             })
             .response;
