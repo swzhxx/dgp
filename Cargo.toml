@@ -22,10 +22,7 @@ name = "hw1-fitting"
 [dependencies]
 anyhow = "1"
 env_logger = "0.9"
-iced = {version = "0.3", features = ["image", "debug", "canvas"]}
-iced_graphics = "0.2"
-iced_native = "0.4"
-iced_wgpu = "0.4"
+
 log = "0.4"
 nalgebra = "0.30.1"
 plotters = "0.3"
