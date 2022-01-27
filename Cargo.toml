@@ -4,26 +4,18 @@ name = "dgp"
 version = "0.1.0"
 
 [[example]]
-name = "tour"
+name = "egui-hello-world"
 
 [[example]]
-name = "plotters-example"
-
-[[example]]
-name = "custom-widget"
-
-[[example]]
-name = "integration-plotters-iced"
-
-[[example]]
-name = "hw1-fitting"
+name = "egui-plot"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 anyhow = "1"
+eframe = "0.16.0"
+egui = "0.16.1"
 env_logger = "0.9"
-
 log = "0.4"
 nalgebra = "0.30.1"
+num-traits = "0.2"
 plotters = "0.3"
-num-traits="0.2"
